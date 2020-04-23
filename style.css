@@ -1,152 +1,121 @@
 
-/*  Put your CSS Here */
-
 body {
-
-    background: -webkit-gradient(linear, left bottom, left top, from(#fbc2eb), to(#a18cd1));
-    background: -webkit-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
-    background: -moz-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
-    background: -o-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
-    background: linear-gradient(to top, #fbc2eb 0%, #a18cd1 100%);
-   
-}
-
-.register {
-    width: 100%;
-    min-width: 100%;
-    padding: 20px;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    
-}
-.register__wrapper {
-    width: 900px;
-    max-height: 600px;
-    background-color: black;
-    border-radius: 10px;
-    overflow: hidden;
-
-    display: flex;
-    align-items: center;
-
-    -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-    color: #ffffff;
-}
-
-.register__image {
+    background-image: linear-gradient(196.2deg, rgb(156, 90, 189) -34.29%, rgb(72, 131, 194) 136.11%);
+    background-size: 100%;
     height: 100vh;
+    background-repeat: no-repeat;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input, select, textarea {
+    border: none;
     width: 100%;
-    background: url('/images/bg-heading-03.jpg') no-repeat center; 
-    background-size: cover;
-}
-
-.register__details {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0px 10% 0px 10%;
-    
-}
-.register__header {
-    display: block;
-    font-size: 24px;
-    line-height: 1.2;
-    text-align: center;
-    padding-bottom: 44px;
-}
-
-.register__details input {
-    color: white;
-    background: transparent;
-    font-size: 16px;
-    height: 20px;
-    padding: 10px 5px 15px 0px;
-    border-bottom: 1px solid gray;
-    margin-bottom: 20px;
-    width: 100%;
-}
-
-.register__details input::placeholder {
-    color: lightgray;
-}
-
-#experience {
-    background-color: transparent;
-    color: lightgray;
-    font-size: 16px;
-    width: 100%;
-}
-.register__experience {
-    border-radius: 0;
-    padding: 0px 0px 8px 0px;
-    border-bottom: 1px solid gray;
-    margin-bottom: 20px;
-    position: relative;
-}
-.register__experience:after {
-    content: '>';
-    font: 17px "Consolas", monospace;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-    position: absolute;
-    pointer-events: none;
-
-    
-
-    right: 5px;
-    bottom: 10px;
-    color: #ffffff;
-}
-
-select {
-    appearance: none;
-    -webkit-appearance: none;
-}
-
-
-button {
-    background-color: rgb(77, 167, 77);
-    color: #ffffff;
     padding: 10px;
-    border-radius: 25px;
-    width: 120px;
-    font-size: 16px;
+    border-radius: 8px;
+    resize: vertical;
 }
 
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  fieldset {
+    min-width: 0;
+    border: 0;
+  }
+  
+  button {
+    outline: none;
+    background: none;
+    border: none;
+  }
 
+  input {
+    outline: none;
+    margin: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
 
+  select {
+  outline: none;
+  margin: 0;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  }
 
-@media (max-width: 500px) {
-   
-        .register__wrapper {
-            border-radius: 10px;
+/*  css reset at top */
+  label {
+    padding: 10px 10px 10px 0;
+    display: inline-block;
+  }
+  
+  input {
+    background-color: rgb(230, 230, 230);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
 
-            display: flex;
-            flex-wrap: wrap; 
-            align-items: center;
-            flex-direction: column;
-            
-            color: #ffffff;
-        }
-        h2 {
-            font-size: 25px;
-        }
-        .register__details {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 10% 10% 10% 10%;
-            width: 100%;
-        }
-        .register__image {
-            height: 45vh;
-            width: 100%;
-        }
-}
+  .register__btn {
+    padding: 10px;
+    text-align: center;
+    background-color:rgb(89, 196, 196);
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    width: 50%;
+  }
+  
+  input:hover {
+    border: none;
+    
+  }
+  
+  .form__container {
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  .col-smaller {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-bigger {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  .form__row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .checkmark__label {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+  }
+  /* Responsive layout - when screen hits mobile size stack on top */
+  @media (max-width: 500px) {
+    .col-smaller, .col-bigger, input {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
